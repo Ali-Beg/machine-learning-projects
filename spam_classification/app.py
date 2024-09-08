@@ -14,7 +14,7 @@ tfidf = pickle.load(open('spam_classification/vectorizer.pkl', 'rb'))
 # Initialize the Porter Stemmer
 ps = PorterStemmer()
 
-Download necessary NLTK data
+# Download necessary NLTK data
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
