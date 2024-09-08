@@ -9,7 +9,7 @@ from scipy.sparse import csr_matrix
 
 # Load model and TF-IDF vectorizer
 model = pickle.load(open('spam_classification/mnb_model.pkl', 'rb'))
-tfidf = pickle.load(open('spam_classification/spam.csv', 'rb'))
+tfidf = pickle.load(open('spam_classification/vectorizer.pkl', 'rb'))
 
 # Initialize the Porter Stemmer
 ps = PorterStemmer()
