@@ -2,7 +2,8 @@
 
 This project is a **Spam Email Classification System** that uses various machine learning models to determine whether an email is spam or ham (not spam). The project involves data preprocessing, model training, and evaluation to identify the best-performing model. The application has been deployed on Streamlit for an interactive user experience.
 
-**Streamlit App:** [Spam Classification](http://my-spam-classificaion.streamlit.app)
+**Streamlit App:** [Spam Classification](https://my-spam-classification.streamlit.app/)
+
 
 ## 🧠 How It Works
 
