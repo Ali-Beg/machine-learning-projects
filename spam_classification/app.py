@@ -7,21 +7,21 @@ from nltk.stem.porter import PorterStemmer
 from scipy.sparse import csr_matrix
 
 
-# # Load model and TF-IDF vectorizer  --- For streamlit deploymnet 
-# model = pickle.load(open('spam_classification/mnb_model.pkl', 'rb'))
-# tfidf = pickle.load(open('spam_classification/vectorizer.pkl', 'rb'))
+# Load model and TF-IDF vectorizer  --- For streamlit deploymnet 
+model = pickle.load(open('spam_classification/mnb_model.pkl', 'rb'))
+tfidf = pickle.load(open('spam_classification/vectorizer.pkl', 'rb'))
 
-# for local use use this path instead
-model = pickle.load(open('mnb_model.pkl', 'rb'))
-tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
+# # for local use use this path instead
+# model = pickle.load(open('mnb_model.pkl', 'rb'))
+# tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
 
 # Initialize the Porter Stemmer
 ps = PorterStemmer()
 
-# # Download necessary NLTK data
-# nltk.download('punkt')
-# nltk.download('punkt_tab')
-# nltk.download('stopwords')
+# Download necessary NLTK data
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 
 # Preprocess function
 def transform_text(text):
